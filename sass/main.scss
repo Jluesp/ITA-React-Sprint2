@@ -1,0 +1,157 @@
+// color principal y secundario
+$primary: #5265e1;
+$secondary: #fa5959;
+
+//Tipografia:
+$font-family-sans-serif: "Rubik", sans-serif;
+
+// navbar
+$navbar-light-toggler-icon-bg: url(../img/icon-hamburger.svg);
+$navbar-light-toggler-border-color: transparent;
+
+// nav-tabs
+$nav-tabs-border-color: transparent;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-border-color: transparent;
+
+// accordion
+
+$accordion-button-icon: url(../img/icon-arrow.svg);
+$accordion-button-active-color: black;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-bg: none;
+$accordion-icon-active-color: $secondary;
+
+// importar bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom css
+
+.nav-item {
+  letter-spacing: 2px;
+}
+
+#myTab .nav-item {
+  border-bottom: 1px solid $gray-300;
+
+  & .nav-link.active {
+    border-bottom: 3px solid $danger;
+  }
+}
+
+.centrar-contenido {
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.btn-features {
+  border: none;
+  color: black;
+
+  &:hover {
+    color: $secondary;
+  }
+
+  &:focus {
+    border-bottom: 3px solid $secondary;
+  }
+}
+
+.card {
+  box-shadow: 0 10px 11px -5px rgba(83, 104, 223, 0.3);
+  border-radius: 1em;
+  border: transparent;
+  background: url(/img/bg-dots.svg) repeat-x center bottom 100px;
+}
+
+.accordion-button:focus {
+  border: none;
+}
+
+.accordion-button:hover {
+  color: $secondary;
+}
+
+.centrar-footer {
+  max-width: 420px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.contact {
+  border: 2px solid $secondary;
+  background-color: $secondary;
+
+  &:hover {
+    color: $secondary !important;
+    background-color: #fff;
+  }
+}
+
+footer {
+  background-color: #252b46;
+  padding: 3em;
+}
+
+.btn-personalizado {
+  border: 2px solid $primary;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+.btn-firefox {
+  border: 2px solid rgb(248, 249, 250);
+
+  &:hover {
+    border: 2px solid gray;
+  }
+}
+
+@media (min-width: 992px) {
+  .login {
+    border: 2px solid $secondary;
+    background-color: $secondary;
+    border-radius: 5px;
+
+    &:hover {
+      color: $secondary !important;
+      background-color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .centrar-botones {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-2 {
+    top: 4em;
+    position: relative;
+  }
+
+  .card-3 {
+    top: 7em;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bookmark-white {
+    margin-bottom: 30px;
+  }
+}
